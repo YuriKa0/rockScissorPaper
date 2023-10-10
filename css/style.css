@@ -5,7 +5,7 @@ html, body{
   font-size:16px;
 }
 body{
-  background:rgb(238, 255, 238);
+  background:rgb(255, 246, 238);
   font-family:'Pretendard', '맑은 고딕', sans-serif;
 }
 section{
@@ -28,7 +28,7 @@ button{
   position:absolute; left:50%; top:50%;
   transform:translate(-50%,-50%);
   width:800px; height:360px;
-  border:4px solid #a4deae;
+  border:4px solid #deb9a4;
   background:#fff; 
 }
 .btn_start, .replay{
