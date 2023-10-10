@@ -8,32 +8,12 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-  <h1>가위바위보!</h1>
-  <div class="game_wrap">
-    <div class="header">
-      <table class="scoreboard">
-        <thead>
-          <tr>
-            <th>내 점수</th>
-            <th>상대 점수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="player_score"></td>
-            <td class="opponent_score"></td>
-          </tr>
-        </tbody>
-      </table>
-      <button class="replay" type="button">replay</button>
-    </div>
-    <div class="element_wrap">
-      <div class="btn_wrap">
-        <button type="button" id="rock"><img src="./img/hand0.png" alt="바위"></button><button type="button" id="scissor"><img src="./img/hand1.png" alt="가위"></button><button type="button" id="paper"><img src="./img/hand2.png" alt="보자기"></button>
-      </div>
-      <div class="opponent"><img src="./img/hand0.png" alt="opponent hand"></div>
-    </div>
+  <div class="wrapper">
+    <section class="intro">
+      <h1><img src="./img/logo.png" alt="가위바위보" /></h1>
+      <a class="btn_start" href="./gameMain.html">시작!</a>
+    </section>
   </div>
-  <script src="./javascript/script.js"></script>
+  <script src="./javascript/script_index.js"></script>
 </body>
 </html>
