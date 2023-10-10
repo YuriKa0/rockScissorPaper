@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>메인화면</title>
+  <!-- style sheet -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div class="wrapper">
+    <section class="game_main">
+      <div class="header">
+        <p class="score">
+          <span class="player_score"></span>
+          :
+          <span class="opponent_score"></span>
+        </p>
+      </div>
+      <div class="element_wrap">
+        <div class="field">
+          <div class="player">
+            <p class="name">&lt;나&gt;</p>
+            <img src="./img/player.png" alt="나" />
+          </div>
+          <div class="opponent">
+            <p class="name">&lt;컴퓨터&gt;</p>
+            <img src="./img/opponent.png" alt="상대편"/>
+          </div>
+        </div>
+        <div class="comment">
+        </div>
+        <div class="btn_wrap">
+          <button type="button" id="rock"><img src="./img/hand0.png" alt="바위"></button><button type="button" id="scissor"><img src="./img/hand1.png" alt="가위"></button><button type="button" id="paper"><img src="./img/hand2.png" alt="보자기"></button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./javascript/script_gamemain.js"></script>
+</body>
+</html>
