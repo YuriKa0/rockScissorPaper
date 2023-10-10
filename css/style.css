@@ -1,53 +1,92 @@
 @import 'default.css';
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
 
 html, body{
   font-size:16px;
 }
 body{
-  background:#ffe;
+  background:rgb(238, 255, 238);
+  font-family:'Pretendard', '맑은 고딕', sans-serif;
+}
+section{
+  width:100%;
 }
 h1{
-  display:none;
+  width:80%; margin:auto;
+  padding-top:50px;
+}
+a{
+  display:block; color:#333;
 }
 img{
   width:100%; height:auto;
 }
-.game_wrap{
-  display:flex; flex-direction:column;
-  justify-content:space-between;
-  margin:auto;
-  width:100%; min-width:320px; max-width:500px; height:100vh;
-  border-left:4px solid #FEF7B2;
-  border-right:4px solid #FEF7B2;
+button{
+  cursor:pointer;
+}
+.wrapper{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  width:800px; height:360px;
+  border:4px solid #a4deae;
   background:#fff; 
 }
+.btn_start, .replay{
+  padding:5px 10px;
+  background:#fff;
+  border:3px solid #333; border-radius:5px;
+  font-weight:600;
+  text-align:center;
+  font-size:2.1rem;
+}
+.btn_start:hover, .replay:hover{
+  background:#f4f4f4;
+  border-color:#5d5d5d;
+}
+.btn_start:active, .replay:active{
+  background:#fff;
+  border-color:#333;
+}
+
+/* 시작화면 */
+.btn_start{
+  position:absolute; left:50%; bottom:40px;
+  transform:translateX(-50%);
+}
+
+
+/* 메인화면 */
 .header{
   display:flex; justify-content: space-between;
   align-items:center;
-  padding:20px;
-  /* background:rgb(254, 247, 178); */
-}
-.header .replay{
-  /* padding: 5px 8px; */
-  height:50px; 
-  padding:0 8px; padding-left:35px; 
-  background:url('https://cdn-icons-png.flaticon.com/128/3976/3976222.png') no-repeat left 8px center;
-  background-size:20px;
-  font-size:20px;
-  cursor:pointer;
-}
-
-.header .scoreboard th, .header .scoreboard td{
-  width:100px; 
   padding:5px 0;
-  background:#fff;
-  border:1px solid #333;
-  text-align:center;
+}
+.header .score{
+  margin:auto;
+  font-size:2rem;
 }
 .element_wrap{
-  display:flex; flex-direction:column-reverse;
-  gap:65px; padding:30px 0;
-  /* background:#ededed; */
+  gap:65px; 
+}
+.element_wrap .field{
+display:flex; justify-content: space-around;
+align-items: end;
+}
+.player, .opponent{
+  width:226px;
+}
+.field .opponent{
+  order:3;
+}
+.field .name{
+  font-size:1.2rem;
+  text-align:center;
+  padding-bottom:10px;
+}
+.comment{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  font-size:2rem;
 }
 .btn_wrap{
   display:flex;
@@ -58,25 +97,33 @@ img{
   width:80%; margin:0 auto;
 }
 .btn_wrap button{
-  width:100px; height:100px;
+  width:60px; height:60px;
   border:5px solid rgb(254, 247, 178);
   border-radius:50%;
   background:#ffffef;
-  cursor:pointer;
   opacity:0.6;
 }
 .btn_wrap button:hover{
   opacity:1;
 }
-.opponent{
-  width:80%;
+
+/* 결과창 */
+.result{
+  display:flex; justify-content:center;
+  align-items:center;
+  height:100%;
+}
+h3{
+  margin-bottom:10px;
+  font-size:5rem;
+}
+.replay{
+  width:100px;
   margin:auto;
+  padding:10px 15px;
+  font-size:1.5rem;
 }
-/* .opponent_area{
-  position: relative;
-}
-.opponent_area .opponent_hand{
-  position:absolute; left:0; top:0;
-  width:200px;
-  background:#fff;
-} */
+
+
+
+
